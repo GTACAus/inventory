@@ -58,9 +58,8 @@
             background-color: #587a8f; /* Slate blue */
         }
 
-        .button-3 {
+        .search-box {
             grid-area: button3;
-            background-color: #01bc75; /* Green */
         }
 
         .button-4 {
@@ -85,17 +84,41 @@
         .button:hover {
             opacity: 0.9;
         }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
     </style>
 </head>
 <body>
     <h1>GTAC Master Inventory</h1>
     <div class="button-grid">
-        <a href="DUNCAN'S CODE GOES HERE" class="button button-1" target="_blank">Search the Inventory</a>
-        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=1929024921" class="button button-2" target="_blank">Access the Inventory</a>
-        <a href="YOUR_THIRD_SHEET_URL" class="button button-3" target="_blank">Add an item</a>
+        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=1929024921" class="button button-1" target="_blank">Access the Master Lab Inventory</a>
+        <a href="YOUR_SECOND_SHEET_URL" class="button button-2" target="_blank">Search by program code</a>
+        
+        <!-- Text box to search by key term -->
+        <input type="text" id="searchBox" class="search-box" placeholder="Search by key term">
+        
         <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=1972275095" class="button button-4" target="_blank">Lab Inventory</a>
         <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=393823730" class="button button-5" target="_blank">Tech Inventory</a>
         <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=210719057" class="button button-6" target="_blank">Ordering</a>
     </div>
+
+    <script>
+        // Function to navigate to URL based on input
+        document.getElementById('searchBox').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                const query = this.value;
+                const baseUrl = 'https://script.google.com/a/macros/unihigh.vic.edu.au/s/AKfycbwHEO7HIgd9pimdHF33jLNs0I9WBWcMtj_67Ut_C5anvCfkq8l3bVu8lBptvkyvBk4-/exec?query=';
+                window.location.href = baseUrl + encodeURIComponent(query);
+            }
+        });
+    </script>
 </body>
 </html>
