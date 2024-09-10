@@ -29,10 +29,9 @@
         .button-grid {
             display: grid;
             grid-template-areas:
-                "button1 button1"
-                "button2 button3"
-                "button4 button5"
-                "button6 button6";
+                "button1 button2"
+                "button3 button4";
+                
             gap: 20px;
             width: 80%;
         }
@@ -48,7 +47,7 @@
             text-align: center;
         }
 
-                .button-1 {
+        .button-1 {
             grid-area: button1;
             background-color: #ff6d3a; /* Orange */
         }
@@ -66,20 +65,6 @@
         .button-4 {
             grid-area: button4;
             background-color: #821e50; /* Plum */
-        }
-
-        .button-5 {
-            grid-area: button5;
-            background-color: #80cdf5; /* Light Blue */
-        }
-
-        .button-6 {
-            grid-area: button6;
-            background-color: #cc6563; /* Orange */
-        }
-
-        .button-1, .button-6 {
-            width: 100%;
         }
 
         .button:hover {
@@ -100,15 +85,12 @@
 <body>
     <h1>GTAC Master Inventory</h1>
     <div class="button-grid">
-        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=1929024921" class="button button-1" target="_blank">Access the Master Lab Inventory</a>
-        <a href="YOUR_SECOND_SHEET_URL" class="button button-2" target="_blank">Search by program code</a>
-        
-        <!-- Text box to search by key term -->
+         <!-- Text box to search by key term -->
         <input type="text" id="searchBox" class="search-box" placeholder="Search by key term">
-        
-        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=1972275095" class="button button-4" target="_blank">Lab Inventory</a>
-        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=393823730" class="button button-5" target="_blank">Tech Inventory</a>
-        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=210719057" class="button button-6" target="_blank">Ordering</a>
+        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=1929024921" class="button button-1" target="_blank">Access the Master Lab Inventory</a>    
+        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=1972275095" class="button button-3" target="_blank">Lab Inventory</a>
+        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=393823730" class="button button-4" target="_blank">Tech Inventory</a>
+        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=210719057" class="button button-2" target="_blank">Ordering</a>
     </div>
 
     <script>
