@@ -105,12 +105,12 @@
     </div>  
     <div class="button-grid">
          <!-- Text box to search by key term -->   
-        <a id="button1" class="button button-1" target="_blank">Access Master Inventory</a>    
-        <a id="button3" class="button button-3" target="_blank">Lab Inventory</a>
-        <a id="button4" class="button button-4" target="_blank">Tech Inventory</a>
-        <a id="button2" class="button button-2" target="_blank">Ordering</a>
-        <a id="button5" class="button button-5" target="_blank">STEM Kits</a>
-        <a id="button6" class="button button-6" target="_blank">Outreach</a>
+        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0" class="button button-1" target="_blank">Access Master Inventory</a>    
+        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=1972275095" class="button button-3" target="_blank">Lab Inventory</a>
+        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=393823730" class="button button-4" target="_blank">Tech Inventory</a>
+        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=210719057" class="button button-2" target="_blank">Ordering</a>
+        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=113590909" class="button button-5" target="_blank">STEM Kits</a>
+        <a href="https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=1230484748" class="button button-6" target="_blank">Outreach</a>
     </div>
 
     <script>
@@ -122,23 +122,6 @@
                 window.location.href = baseUrl + encodeURIComponent(query);
             }
         });
-
-        // Adding the search functionality to the buttons
-        const updateButtonUrls = (query) => {
-            document.getElementById('button1').href = "https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&query=" + encodeURIComponent(query);
-            document.getElementById('button2').href = "https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=210719057&query=" + encodeURIComponent(query);
-            document.getElementById('button3').href = "https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=393823730&query=" + encodeURIComponent(query);
-            document.getElementById('button4').href = "https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=0#gid=0&fvid=1972275095&query=" + encodeURIComponent(query);
-            document.getElementById('button5').href = "https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=113590909&query=" + encodeURIComponent(query);
-            document.getElementById('button6').href = "https://docs.google.com/spreadsheets/d/1lqTaG2F3Hv2RKhxLNhgX6RnjqQtE_iwKi4tvsFm-O4s/edit?gid=1230484748&query=" + encodeURIComponent(query);
-        };
-
-        // Listen for search input changes to update buttons
-        document.getElementById('searchBox').addEventListener('input', function() {
-            const query = this.value;
-            updateButtonUrls(query);
-        });
-
     </script>
 </body>
 </html>
