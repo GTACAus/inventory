@@ -118,7 +118,8 @@
         document.getElementById('searchBox').addEventListener('keypress', function(event) {
             if (event.key === 'Enter') {
                 const query = this.value;
-                const baseUrl = 'https://script.google.com/a/macros/unihigh.vic.edu.au/s/AKfycbwHEO7HIgd9pimdHF33jLNs0I9WBWcMtj_67Ut_C5anvCfkq8l3bVu8lBptvkyvBk4-/exec?query=';
+                
+                const baseUrl = 'https://script.google.com/a/macros/unihigh.vic.edu.au/s/AKfycbxxEbQqNsNqw8YYgg9l0PLTMQl0ooNfaQBVYO_SVKRcwfANixBKbzDVfksKE10wbmIy/exec?query=';
                 window.location.href = baseUrl + encodeURIComponent(query);
             }
         });
